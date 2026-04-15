@@ -6,7 +6,7 @@ Checking and installing environmental requirements
 pip install -r requirements.txt
 ```
 ## Datasets
-链接: https://pan.baidu.com/s/1KZM5QhU7SxhZp-OslKd9hQ?pwd=5fut 提取码: 5fut 
+链接: https://pan.baidu.com/s/1-H8tIWtQS_ImhhJo6eocMQ?pwd=yg7r 提取码: yg7r 
 
 Adding the dataset path to the corresponding location in the run.py file, e.g. IEMOCAP_path = "".
 
