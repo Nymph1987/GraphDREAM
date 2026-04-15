@@ -1,0 +1,73 @@
+# --- 1. Python 临时文件 ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- 2. 深度学习与数据相关 (非常重要) ---
+# 过滤掉所有数据集文件 (通常数据很大，不建议传到 Git)
+# 如果你的数据在 data/ 文件夹下，取消下面注释
+data/
+
+# 过滤掉模型权重文件 (.pth, .pt, .ckpt, .h5)
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.weights
+*.pkl
+*.pickle
+
+# 过滤掉训练日志和 Tensorboard 文件
+lightning_logs/
+runs/
+.tensorboard/
+
+# --- 3. 你的实验记录与临时文件 ---
+# 过滤掉 nohup 输出日志
+nohup.out
+*.log
+
+# 过滤掉刚才出现在你列表里的临时 pickle 文件
+pytorch-errorfile-*.pickle
+
+# 如果 results 文件夹里全是生成的图片或大模型，建议过滤
+# 如果你想保留 results 结构但不过滤，可以只过滤其中的内容
+results/*
+!results/.gitkeep
+
+# --- 4. 调参过程中的临时记录 ---
+# 比如你那个 "mosi_调参.txt" 如果不需要同步也可以过滤
+# mosi_*.txt
+
+# --- 5. 虚拟环境与配置 ---
+.venv
+venv
+ENV
+.env
+.venv/
+.vscode/
+.idea/
+
+# --- 6. 系统文件 ---
+.DS_Store
+Thumbs.dbdata.tar.gz
+data.tar.gz
+data.tar.gz
